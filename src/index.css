@@ -21,4 +21,16 @@ body{
 #navbar{
     background: #191a2b;
 }
-  
+
+.pageRibbon {    
+    border-top: 100px solid red;
+    border-right: 100px solid transparent;    
+}
+
+.pageTitle {
+    margin-top:-80px;
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: bolder;
+    font-size: 80px;
+    text-shadow: 5px 5px 5px lightsteelblue;
+}
