@@ -1,3 +1,5 @@
+import MainBG from '../assets/main-bg.jpg'
+
 const links = [    
     { name: 'Learn more', href: '#' },
   ]
@@ -10,9 +12,10 @@ const links = [
   
   export default function Hero() {
     return (
-      <div className="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32">
+      <div className="mainbg relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32">
         <img
-          src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&crop=focalpoint&fp-y=.8&w=2830&h=1500&q=80&blend=111827&sat=-100&exp=15&blend-mode=multiply"
+          // src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&crop=focalpoint&fp-y=.8&w=2830&h=1500&q=80&blend=111827&sat=-100&exp=15&blend-mode=multiply"
+          src={MainBG}
           alt=""
           className="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center"
         />
@@ -41,9 +44,9 @@ const links = [
           />
         </div>
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mx-auto max-w-2xl lg:mx-0">
-            <h2 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">Dreams Endeavour</h2>
-            <p className="mt-6 text-lg leading-8 text-gray-300">
+          <div className="mx-auto max-w-xl lg:mx-0 bg-yellow-50 text-gray-900 p-8 opacity-70">
+            <h2 className="text-4xl font-bold tracking-tight sm:text-6xl">Dreams Endeavour</h2>
+            <p className="mt-6 text-lg leading-8">
             Dreams Endeavour is the one of a kind venture that you will love to explore. The time and money invested is sure to be of great worth that will add brilliance to your professional dreams.
             </p>
           </div>
@@ -57,9 +60,9 @@ const links = [
             </div>
             <dl className="mt-16 grid grid-cols-1 gap-8 sm:mt-20 sm:grid-cols-2 lg:grid-cols-4">
               {stats.map((stat) => (
-                <div key={stat.name} className="flex flex-col-reverse">
-                  <dt className="text-base leading-7 text-gray-300">{stat.name}</dt>
-                  <dd className="text-2xl font-bold leading-9 tracking-tight text-white">{stat.value}</dd>
+                <div key={stat.name} className="flex flex-col-reverse rounded-md opacity-70 p-4 bg-yellow-50 text-gray-700">
+                  <dt className="text-base leading-7">{stat.name}</dt>
+                  <dd className="text-2xl font-bold leading-9 tracking-tight">{stat.value}</dd>
                 </div>
               ))}
             </dl>

@@ -4,7 +4,7 @@
 
 body{
     position: relative; 
-    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Playfair Display', serif; 
 }
 
 #main{    
@@ -19,7 +19,8 @@ body{
 }
 
 #navbar{
-    background: #191a2b;
+    font-family: 'Cinzel', serif;    
+    background: #fff;
 }
 
 .pageRibbon {    
@@ -34,3 +35,8 @@ body{
     font-size: 80px;
     text-shadow: 5px 5px 5px lightsteelblue;
 }
+
+.mainbg {
+    background: linear-gradient(rgba(37, 5, 49, 0.5), rgba(60, 14, 78, 0.5)), url(assets/mainbg.jpg);
+}
+

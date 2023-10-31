@@ -7,7 +7,7 @@ const Navbar = () =>{
 
     const [nav, setNav] = useState(false);
 
-    const activeLink = "text-blue-200"
+    const activeLink = "text-green-800"
     
     const handleNav = () => {
         setNav(!nav)
@@ -15,15 +15,15 @@ const Navbar = () =>{
 
     return(
         <div>
-            <div id="navbar" className="flex justify-between items-center h-24 w-full mx-auto px-4 text-white">                
+            <div id="navbar" className="flex justify-around items-center h-24 w-full mx-auto px-4 text-green-600">                
                 <div>
                     <NavLink to="/">
                         <img className="w-[120px] my-8 sm:w-[100px] md:w-[100px] items-start" src={Logo} alt="/" />
                     </NavLink>                    
                 </div>               
                 
-                <ul className="hidden md:flex font-bold">
-                    <li className="p-4">
+                <ul className="hidden md:flex font-bold gap-7">    
+                    <li className="">
                         <NavLink                         
                             to="/"    
                             className={({ isActive }) => isActive ? activeLink : ''}                    
@@ -31,7 +31,7 @@ const Navbar = () =>{
                             Home
                         </NavLink>
                     </li>
-                    <li className="p-4">
+                    <li className="">
                         <NavLink                         
                             to="/about"                        
                             className={({ isActive }) => isActive ? activeLink : ''}
@@ -39,7 +39,7 @@ const Navbar = () =>{
                             About
                         </NavLink>
                     </li>
-                    <li className="p-4">
+                    <li className="">
                         <NavLink                         
                             to="/courses"                        
                             className={({ isActive }) => isActive ? activeLink : ''}
@@ -47,7 +47,7 @@ const Navbar = () =>{
                             Courses
                         </NavLink>
                     </li>                                    
-                    <li className="p-4">
+                    <li className="">
                         <NavLink
                             to="/contact"                        
                             className={({ isActive }) => isActive ? activeLink : ''}
