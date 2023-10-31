@@ -1,3 +1,4 @@
+import Footer from '../components/Footer';
 import PageRibbon from '../components/PageRibbon';
 
 const Contact = () => {
@@ -102,6 +103,7 @@ const Contact = () => {
         </div>
       </div>
       
+      <Footer />
       </>         
     )
 }

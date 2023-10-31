@@ -6,53 +6,53 @@ const Footer = () => {
     const currentYear = currentDate.getFullYear();
 
     return(
-        <div className='footerClass bg-[#191a2b] text-white'>
+        <div className='footerClass bg-[#f7d852] text-gray-800'>
             <div className='w-full max-w-[95%] m-auto p-4 md:pt-8 grid md:grid-cols-6'>
                 <div className='w-full max-w-[95%] text-xs font-bold mb-8 col-span-4 md:border-r-2 md:border-blue-200'>
-                    <p className='font-bold text-lg pb-3 underline'>Our Services</p>
+                    <p className='font-bold text-lg pb-3 underline'>Our Courses</p>
                     <div className='grid grid-cols-6 '>                
                         <div className='col-span-3 sm:col-span-2'>
                             <ul>                            
                                 <li className='pb-2'>
-                                    <a href="/#services">Web Development</a>
+                                    <a href="/#services">Home</a>
                                 </li>
                                 <li className='pb-2'>
-                                    <a href="/#services">Mobile Application</a>
+                                    <a href="/#services">About Us</a>
                                 </li>
                                 <li className='pb-2'>
-                                    <a href="/#services">Product Engineering</a>
+                                    <a href="/#services">Our Team</a>
                                 </li>
                                 <li className='pb-2'>
-                                    <a href="/internship">Internships & Training</a>
+                                    <a href="/internship">Courses</a>
                                 </li>
                             </ul>
                         </div>  
                         <div className='col-span-3 sm:col-span-2'>
                             <ul>     
                                 <li className='pb-2'>
-                                    <a href="/#services">UI/UX Design</a>
+                                    <a href="/#services">Basic Courses</a>
                                 </li>                       
                                 <li className='pb-2'>
-                                    <a href="/#services">Cloud Services</a>
+                                    <a href="/#services">Premium Courses</a>
                                 </li>
-                                <li className='pb-2'>
+                                {/* <li className='pb-2'>
                                     <a href="/#services">IT Outsourcing</a>
                                 </li>
                                 <li className='pb-2'>
                                     <a href="/#services">Agile Consulting</a>
-                                </li>                                
+                                </li>                                 */}
                             </ul>
                         </div> 
                         <div className='col-span-6 sm:col-span-2'>
                             <ul>
                                 <li className='pb-2'>
-                                    <a href="/about">SEO & Digital Marketing</a>
+                                    <a href="/about">Spoken English</a>
                                 </li> 
                                 <li className='pb-2'>
-                                    <a href="/about">IT Products & Services</a>
+                                    <a href="/about">Personality Development</a>
                                 </li>                            
                                 <li className='pb-2'>
-                                    <a href="/about">Maintenance & Support</a>
+                                    <a href="/about">Interview Skills</a>
                                 </li>
                             </ul>
                         </div>             
@@ -62,11 +62,11 @@ const Footer = () => {
                 <div className='grid grid-cols-4 col-span-2 text-xs font-bold mb-8'>                    
                     <div className='col-span-3'>
                         <p className='font-bold text-lg pb-3 underline'>Reach Us</p>
-                        <p className='pb-1'>Beltola Tiniali</p>
-                        <p className='pb-1'>Guwahati-781028</p>
+                        <p className='pb-1'>Rehabari</p>
+                        <p className='pb-1'>Guwahati-781008</p>
                         <p className='pb-1'>Assam, India</p>
-                        <p className='pb-1'>+91-7578094093</p>
-                        <p className='pb-1'>info@zephyrsolutionsgroup.com</p>                    
+                        <p className='pb-1'>+91-9707038551</p>
+                        <p className='pb-1'>namratatalukdar38551@gmail.com</p>                    
                     </div>
                     <div className='col-span-1 grid justify-items-end items-center'>
                         <ul>
@@ -87,7 +87,8 @@ const Footer = () => {
                 </div>                        
             </div>        
             <div className='w-full'>
-                <p className='text-center pb-4 text-sm'>Zephyr Solutions &#169; {currentYear} | All rights reserved. </p>                           
+                <p className='text-center text-xs'>Dreams Endeavour &#169; {currentYear} | All rights reserved. </p>                           
+                <p className='text-center pb-4 text-xs'>Developed by <a href ="https://www.zephyrsolutionsgroup.com/">Zephyr Solutions</a></p>                           
             </div>    
             
         </div>        

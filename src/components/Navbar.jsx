@@ -18,7 +18,7 @@ const Navbar = () =>{
             <div id="navbar" className="flex justify-around items-center h-24 w-full mx-auto px-4 text-green-600">                
                 <div>
                     <NavLink to="/">
-                        <img className="w-[120px] my-8 sm:w-[100px] md:w-[100px] items-start" src={Logo} alt="/" />
+                        <img className="items-start" src={Logo} alt="/" />
                     </NavLink>                    
                 </div>               
                 

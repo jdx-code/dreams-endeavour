@@ -1,5 +1,6 @@
 import React from 'react'
 import CourseCards from '../components/CourseCards'
+import Footer from '../components/Footer'
 import PageRibbon from '../components/PageRibbon'
 
 const Courses = () => {
@@ -7,6 +8,7 @@ const Courses = () => {
     <>
         <PageRibbon pageTitle="Courses"/>
         <CourseCards />
+        <Footer />
     </>
   )
 }

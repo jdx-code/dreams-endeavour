@@ -4,7 +4,8 @@
 
 body{
     position: relative; 
-    font-family: 'Playfair Display', serif; 
+    /* font-family: 'Playfair Display', serif;  */
+    font-family: 'Poppins', sans-serif;
 }
 
 #main{    
@@ -24,7 +25,7 @@ body{
 }
 
 .pageRibbon {    
-    border-top: 100px solid red;
+    border-top: 100px solid #f7d852;
     border-right: 100px solid transparent;    
 }
 
