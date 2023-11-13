@@ -65,7 +65,7 @@ const Footer = () => {
                         <p className='pb-1'>Rehabari</p>
                         <p className='pb-1'>Guwahati-781008</p>
                         <p className='pb-1'>Assam, India</p>
-                        <p className='pb-1'>+91-9707038551</p>
+                        {/* <p className='pb-1'>+91-9707038551</p> */}
                         <p className='pb-1'>namratatalukdar38551@gmail.com</p>                    
                     </div>
                     <div className='col-span-1 grid justify-items-end items-center'>
