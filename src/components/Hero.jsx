@@ -1,7 +1,9 @@
+import { NavLink } from 'react-router-dom'
 import MainBG from '../assets/main-bg.jpg'
 
 const links = [    
-    { name: 'Learn more', href: '#' },
+    { name: 'Learn more', to: '/about' },
+    { name: 'Enroll now', to: 'https://forms.gle/A1QZRQtL1GcVRdFV6' },
   ]
   const stats = [
     { name: 'Free Courses', value: '6' },
@@ -51,11 +53,18 @@ const links = [
             </p>
           </div>
           <div className="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
-            <div className="grid grid-cols-1 gap-x-8 gap-y-6 text-base font-semibold leading-7 text-white sm:grid-cols-2 md:flex lg:gap-x-10">
+            <div className="grid grid-cols-1 gap-x-8 gap-y-6 text-base font-semibold leading-7 sm:grid-cols-2 md:flex lg:gap-x-10">
               {links.map((link) => (
-                <a key={link.name} href={link.href}>
-                  {link.name} <span aria-hidden="true">&rarr;</span>
-                </a>
+                // <a key={link.name} href={link.href}>
+                //   {link.name} <span aria-hidden="true">&rarr;</span>
+                // </a>
+                <button className='bg-[#10b84e] text-gray-100 p-2 rounded-md hover:bg-[#0ecf55] hover:text-gray-200'>
+                  <NavLink
+                    to={link.to}
+                  >
+                    {link.name}
+                  </NavLink>
+                </button>                
               ))}
             </div>
             <dl className="mt-16 grid grid-cols-1 gap-8 sm:mt-20 sm:grid-cols-2 lg:grid-cols-4">

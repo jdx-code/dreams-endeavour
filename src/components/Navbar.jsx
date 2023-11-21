@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import {AiOutlineClose, AiOutlineMenu} from 'react-icons/ai';
-import Logo from '../assets/companyLogo.png'
+import Logo from '../assets/dreams-endeavour-logo.png'
 
 const Navbar = () =>{
 
@@ -15,14 +15,15 @@ const Navbar = () =>{
 
     return(
         <div>
-            <div id="navbar" className="flex justify-around items-center h-24 w-full mx-auto px-4 text-green-600">                
-                <div>
+            <div id="navbar" className="flex justify-between items-center h-24 w-full mx-auto px-4 text-green-600">                
+            
+                <div className="">
                     <NavLink to="/">
                         <img className="items-start" src={Logo} alt="/" />
                     </NavLink>                    
                 </div>               
                 
-                <ul className="hidden md:flex font-bold gap-7">    
+                <ul className="hidden md:flex font-bold gap-8">    
                     <li className="">
                         <NavLink                         
                             to="/"    
@@ -55,7 +56,8 @@ const Navbar = () =>{
                             Contact
                         </NavLink>
                     </li>
-                </ul>
+                </ul>                
+                
                 <div onClick={handleNav} className="block md:hidden">
                     {nav ? <AiOutlineClose size={20}/>: <AiOutlineMenu size={20}/>}                
                 </div>
