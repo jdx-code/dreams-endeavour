@@ -5,6 +5,9 @@ import Member3 from '../assets/team/3.jpeg'
 import Member4 from '../assets/team/4.jpeg'
 import Member5 from '../assets/team/5.jpeg'
 import Member6 from '../assets/team/6.jpeg'
+import Member7 from '../assets/team/7.jpeg'
+import Member8 from '../assets/team/8.jpeg'
+import DefaultAvatar from '../assets/team/default-avatar.jpg'
 import Founder from '../assets/team/founder.jpeg'
 
 const Team = () => {
@@ -17,6 +20,10 @@ const Team = () => {
     { id: 4, name: 'Dr.L.Gayathri Devi', address: 'Virudhunagar, India', role: 'Assistant Professor', img: Member4 },
     { id: 5, name: 'Ms. Pranjal Bhatt', address: 'Valsad, India', role: 'Asst.Professor', img: Member5 },
     { id: 6, name: 'Priyanka Dutta', address: 'India', role: 'Asst. Professor', img: Member6 },
+    { id: 7, name: 'Arockia Licy Monika C', address: 'Bengaluru, India', role: 'Research Scholar', img: Member7 },
+    { id: 7, name: 'Sripriya M R', address: 'Tamil Nadu, India', role: 'Asst. Professor', img: Member8 },
+    { id: 7, name: 'Dr. Suresh Babu Y', address: 'Hyderabad, India', role: 'Asst. Professor', img: DefaultAvatar },
+    { id: 7, name: 'Dr. A. R. Jyothi Priya', address: 'Jagathgiri Gutta, India', role: 'Lecturer', img: DefaultAvatar },
   ]   
 
   return (
