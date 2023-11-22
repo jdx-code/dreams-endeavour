@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
+import { motion, useAnimation, useInView } from 'framer-motion' 
 import Member1 from '../assets/team/1.jpeg'
 import Member2 from '../assets/team/2.jpeg'
 import Member3 from '../assets/team/3.jpeg'
@@ -11,6 +12,19 @@ import DefaultAvatar from '../assets/team/default-avatar.jpg'
 import Founder from '../assets/team/founder.jpeg'
 
 const Team = () => {
+
+  const ref = useRef(null)
+    const isInView = useInView(ref, { once: true })
+
+    const mainControls = useAnimation()
+
+    useEffect(() => {
+        if(isInView) {
+        // Fire the animation
+        mainControls.start("visible")
+
+        }
+    }, [isInView])
 
   const teammates = [
     { id: 0, name: 'Namrata Talukdar', address: 'Guwahati, India', role: 'Founder, Dreams Endeavour', img: Founder },
@@ -28,25 +42,35 @@ const Team = () => {
 
   return (
     <>  
-        
+      <div ref={ref}>
         <h1 className='text-center mt-8 text-4xl'>Our team</h1>
-          
+        
         <div className='flex flex-col items-center sm:flex-row sm:justify-center sm:flex-wrap'>
             
             {teammates.map((teammate)=> (
-                <div key={teammate.id} className='w-72 mt-8 mb-8 p-2 border-2 border-blue-200 shadow-2xl rounded-lg sm:mx-4'>
+                <motion.div 
+                  variants={{
+                    hidden: { opacity: 0, rotateY: 180 },
+                    visible: { opacity: 1, rotateY: 0 },
+                  }}
+                  initial="hidden"
+                  animate={mainControls}
+                  transition={{ 
+                    duration: 1, delay: 0.5 
+                  }}   
+                  key={teammate.id} className='w-72 mt-8 mb-8 p-2 border-2 border-blue-200 shadow-2xl rounded-lg sm:mx-4'
+                >
                     <img className="rounded-md" src={teammate.img} />
                     <div className='text-center p-2'>
                         <p>{teammate.name}</p>
                         <p>{teammate.address}</p>
                         <p>{teammate.role}</p>
                     </div>                
-                </div>
+                </motion.div>
             ))}              
                       
         </div>
-        
-        
+      </div>        
     </>
   )
 }
