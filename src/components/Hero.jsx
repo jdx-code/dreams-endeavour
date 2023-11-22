@@ -45,20 +45,18 @@ const links = [
             }}
           />
         </div>
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mx-auto max-w-xl lg:mx-0 bg-yellow-50 text-gray-900 p-8 opacity-70">
-            <h2 className="text-4xl font-bold tracking-tight sm:text-6xl">Dreams Endeavour</h2>
+        <div className="mx-auto lg:max-w-7xl px-6 lg:px-8">
+          <div className="md:max-w-xl lg:mx-0 bg-yellow-50 text-gray-900 p-8 opacity-70">
+            <h2 className="sm:text-blue-700 md:text-red-700 text-4xl font-bold tracking-tight sm:text-6xl">Dreams Endeavour</h2>
             <p className="mt-6 text-lg leading-8">
             Dreams Endeavour is the one of a kind venture that you will love to explore. The time and money invested is sure to be of great worth that will add brilliance to your professional dreams.
             </p>
           </div>
-          <div className="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
-            <div className="grid grid-cols-1 gap-x-8 gap-y-6 text-base font-semibold leading-7 sm:grid-cols-2 md:flex lg:gap-x-10">
-              {links.map((link) => (
-                // <a key={link.name} href={link.href}>
-                //   {link.name} <span aria-hidden="true">&rarr;</span>
-                // </a>
-                <button className='bg-[#10b84e] text-gray-100 p-2 rounded-md hover:bg-[#0ecf55] hover:text-gray-200'>
+          <div className="mx-auto mt-10 lg:max-w-4xl lg:mx-0">
+            <div className="grid grid-cols-2 gap-x-8 gap-y-6 text-base font-semibold leading-7 sm:grid-cols-2 md:flex lg:gap-x-10">
+              
+              {links.map((link) => (                
+                <button className='bg-[#ff8a00] text-gray-100 p-2 rounded-md hover:text-gray-700'>
                   <NavLink
                     to={link.to}
                   >
@@ -66,6 +64,7 @@ const links = [
                   </NavLink>
                 </button>                
               ))}
+
             </div>
             <dl className="mt-16 grid grid-cols-1 gap-8 sm:mt-20 sm:grid-cols-2 lg:grid-cols-4">
               {stats.map((stat) => (

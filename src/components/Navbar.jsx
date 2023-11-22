@@ -61,8 +61,9 @@ const Navbar = () =>{
                 <div onClick={handleNav} className="block md:hidden">
                     {nav ? <AiOutlineClose size={20}/>: <AiOutlineMenu size={20}/>}                
                 </div>
-                <div className={nav ? "fixed left-0 top-0 w-[85%] h-[96%] z-20 border-r border-r-gray-900 bg-[#1b0424] ease-in-out duration-500" : "fixed left-[-100%]"}>                    
-                    <img className="w-[90px] items-start" src={Logo} />
+                {/* <div className={nav ? "fixed left-0 top-0 w-[85%] h-[96%] z-20 border-r border-r-gray-900 bg-[#f9f7fa] ease-in-out duration-500" : "fixed left-[-100%]"}>                     */}
+                <div className={nav ? "fixed left-0 top-0 w-[85%] h-[100%] z-20 border-r border-r-gray-900 bg-[#f1e7f5] ease-in-out duration-500" : "fixed left-[-100%]"}> 
+                    <img className="w-[90px] items-start ml-4 mt-4" src={Logo} />
                     
                     <ul className="uppercase p-4">
                         <li className="p-4 border-b border-gray-600">
@@ -83,20 +84,12 @@ const Navbar = () =>{
                         </li>
                         <li className="p-4 border-b border-gray-600">
                             <NavLink
-                                to="/services"
+                                to="/courses"
                                 onClick={handleNav}
                             >
-                                Services
+                                Courses
                             </NavLink>
-                        </li>
-                        <li className="p-4 border-b border-gray-600">
-                            <NavLink
-                                to="/career"
-                                onClick={handleNav}
-                            >
-                                Career
-                            </NavLink>
-                        </li>
+                        </li>                        
                         <li className="p-4">
                             <NavLink
                                 to="/contact"

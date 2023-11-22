@@ -1,9 +1,25 @@
+import React, { useEffect, useRef } from 'react'
+import { motion, useAnimation, useInView } from 'framer-motion' 
 import Footer from '../components/Footer';
 import PageRibbon from '../components/PageRibbon';
 import Team from '../components/Team';
 import AboutImg from '../assets/about.jpg'
+import Payments from '../components/Payments';
 
 const About = () => {
+
+  const ref = useRef(null)
+    const isInView = useInView(ref, { once: true })
+
+    const mainControls = useAnimation()
+
+    useEffect(() => {
+        if(isInView) {
+        // Fire the animation
+        mainControls.start("visible")
+
+        }
+    }, [isInView])
 
   return (
     <>
@@ -37,31 +53,53 @@ const About = () => {
           <rect width="100%" height="100%" strokeWidth={0} fill="url(#e813992c-7d03-4cc4-a2bd-151760b470a0)" />
         </svg>
       </div>
-      <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start lg:gap-y-10">         
+      <div ref={ref} className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start lg:gap-y-10">         
 
-      <div className="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
+      <motion.div 
+        variants={{
+          hidden: { opacity: 0 },
+          visible: { opacity: 1 },
+        }}
+        initial="hidden"
+        animate={mainControls}
+        transition={{ 
+          duration: 1, delay: 0.5 
+        }}       
+        className="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8"
+      >
         <div className="lg:pr-4">
           <div className="lg:max-w-lg">
-              {/* <p className="text-base font-semibold leading-7 text-indigo-600">Deploy faster</p> */}
-              <h1 className="mt-2 text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl">What is Dreams Endeavour ?</h1>
-              <p className="mt-6 text-xl leading-8 text-gray-700">
-              Dreams Endeavour is the one of a kind venture that you will love to explore. The time and money invested is sure to be of great worth that will add brilliance to your professional dreams.
-              </p>
-            </div>
+            {/* <p className="text-base font-semibold leading-7 text-indigo-600">Deploy faster</p> */}
+            <h1 className="mt-2 text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl">What is Dreams Endeavour ?</h1>
+            <p className="mt-6 text-xl leading-8 text-gray-700">
+            Dreams Endeavour is the one of a kind venture that you will love to explore. The time and money invested is sure to be of great worth that will add brilliance to your professional dreams.
+            </p>
           </div>
         </div>
+      </motion.div>
 
         <div className="-ml-12 -mt-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
           <img
-            className="w-[48rem] max-w-none rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]"
-            // src="https://tailwindui.com/img/component-images/dark-project-app-screenshot.png"
+            className="w-[48rem] max-w-none rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]"            
             src={AboutImg}
             alt=""
           />
         </div>
-        <div className="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
+        <div className="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8"
+        >
           <div className="lg:pr-4">
-            <div className="max-w-xl text-base leading-7 text-gray-700 lg:max-w-lg">
+            <motion.div 
+              variants={{
+                hidden: { opacity: 0 },
+                visible: { opacity: 1 },
+              }}
+              initial="hidden"
+              animate={mainControls}
+              transition={{ 
+                duration: 1, delay: 0.5 
+              }}
+              className="max-w-xl text-base leading-7 text-gray-700 lg:max-w-lg"
+            >
                             
               <h2 className="mt-16 text-2xl font-bold tracking-tight text-gray-900">Our Platform's main goal</h2>
               <p className="mt-6">
@@ -73,13 +111,15 @@ const About = () => {
                 In this age of digitalisaion ,'Dream Endeavor' aims at providing online job oriented soft skills courses for people who are seeking a job.The founder of this website is Namrata Talukdar ,resident of Guwahati with a 12 years experience in training and development ,a professional writer with international acclamation for her poetry and write ups.She is also a member of the All India Forum of English Scholars and Trainers.Currently pursuing her PhD in Computer Science. Working with reputed Universities and colleges in Assam ,she is adept in the field of teaching and counselling .With the hope of shaping up the lives of people who has dreams but are unable to turn them real ,Dreams Endeavour is the one of a kind venture that you will love to explore.The time and money invested is sure to be of great worth that will add brilliance to your professional dreams.
               </p>
 
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>
     </div>
 
     <Team />
+
+    <Payments />
     
     <Footer />
     </>
