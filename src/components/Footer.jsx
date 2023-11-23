@@ -68,7 +68,7 @@ const Footer = () => {
                         {/* <p className='pb-1'>+91-9707038551</p> */}
                         <p className='pb-1'>namratatalukdar38551@gmail.com</p>                    
                     </div>
-                    <div className='col-span-1 grid justify-items-end items-center'>
+                    {/* <div className='col-span-1 grid justify-items-end items-center'>
                         <ul>
                             <li className='pb-4'>
                                 <a href="https://twitter.com/zephyrsolx"><FontAwesomeIcon icon={['fab', 'twitter']} size="lg"/></a>
@@ -83,7 +83,7 @@ const Footer = () => {
                                 <a href="https://github.com/zephyrsolutions"><FontAwesomeIcon icon={['fab', 'github']} size="lg"/></a>
                             </li>
                         </ul>
-                    </div>                    
+                    </div>                     */}
                 </div>                        
             </div>        
             <div className='w-full'>

@@ -9,7 +9,7 @@ const stats = [
   ]
 
 const links = [        
-    { name: 'Enroll now', to: 'https://forms.gle/A1QZRQtL1GcVRdFV6' },
+    { name: 'Enroll now', to: 'https://docs.google.com/forms/d/e/1FAIpQLScOF-wMyki2RrpToBKCNiS--xniFngmWXMrOM9iivyc2mEqgQ/viewform' },
 ]
   
   const Stats = () => {
