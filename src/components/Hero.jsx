@@ -3,7 +3,7 @@ import MainBG from '../assets/main-bg.jpg'
 
 const links = [    
     { name: 'Learn more', to: '/about' },
-    { name: 'Enroll now', to: 'https://forms.gle/A1QZRQtL1GcVRdFV6' },
+    { name: 'Enroll now', to: 'https://docs.google.com/forms/d/e/1FAIpQLScOF-wMyki2RrpToBKCNiS--xniFngmWXMrOM9iivyc2mEqgQ/viewform' },
   ]
   const stats = [
     { name: 'Free Courses', value: '6' },
@@ -47,7 +47,7 @@ const links = [
         </div>
         <div className="mx-auto lg:max-w-7xl px-6 lg:px-8">
           <div className="md:max-w-xl lg:mx-0 bg-yellow-50 text-gray-900 p-8 opacity-70">
-            <h2 className="sm:text-blue-700 md:text-red-700 text-4xl font-bold tracking-tight sm:text-6xl">Dreams Endeavour</h2>
+            <h2 className="text-red-700 text-4xl font-bold tracking-tight sm:text-6xl">Dreams Endeavour</h2>
             <p className="mt-6 text-lg leading-8">
             Dreams Endeavour is the one of a kind venture that you will love to explore. The time and money invested is sure to be of great worth that will add brilliance to your professional dreams.
             </p>
@@ -58,7 +58,7 @@ const links = [
               {links.map((link) => (                
                 <button className='bg-[#ff8a00] text-gray-100 p-2 rounded-md hover:text-gray-700'>
                   <NavLink
-                    to={link.to}
+                    to={link.to}                                      
                   >
                     {link.name}
                   </NavLink>

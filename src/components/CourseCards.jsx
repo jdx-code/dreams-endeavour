@@ -10,18 +10,28 @@ import CourseSix from '../assets/c6.jpg'
 
 const CourseCards = () => {
 
-    const ref = useRef(null)
-    const isInView = useInView(ref, { once: true })
+    const freeCoursesRef = useRef(null);
+    const premiumCoursesRef = useRef(null);
+    
+    const freeCoursesControls = useAnimation();
+    const premiumCoursesControls = useAnimation();
 
-    const mainControls = useAnimation()
+    const freeCoursesInView = useInView(freeCoursesRef, { once: true });
+    const premiumCoursesInView = useInView(premiumCoursesRef, { once: true });
 
     useEffect(() => {
-        if(isInView) {
-        // Fire the animation
-        mainControls.start("visible")
-
+        if (freeCoursesInView) {
+            // Fire the animations independently
+            freeCoursesControls.start("visible");          
         }
-    }, [isInView])
+    }, [freeCoursesInView]);
+
+    useEffect(() => {
+        if (premiumCoursesInView) {
+            // Fire the animations independently
+            premiumCoursesControls.start("visible");
+        }
+    }, [premiumCoursesInView]);
 
   const freeCourses = [
     { id: 1, name: 'Spoken English', desc: 'Introduction, Grammar, Reading, Conversational Skills, Vocabulary Pronunciation.', price: 'FREE', img: CourseOne },
@@ -40,10 +50,10 @@ const CourseCards = () => {
 
   return (
     <>  
-        <div ref={ref}>
+        <div>
             <h1 className='text-center mt-8 text-4xl'>Free Courses</h1>
             
-            <div className='flex flex-col items-center sm:flex-row sm:justify-center sm:flex-wrap'>
+            <div ref={freeCoursesRef} className='flex flex-col items-center sm:flex-row sm:justify-center sm:flex-wrap'>
                 
                 {freeCourses.map((course)=> (
                     <motion.div 
@@ -52,7 +62,7 @@ const CourseCards = () => {
                             visible: { opacity: 1, rotateY: 0 },
                         }}
                         initial="hidden"
-                        animate={mainControls}
+                        animate={freeCoursesControls}
                         transition={{ 
                             duration: 1, delay: 0.5 
                         }}
@@ -70,7 +80,7 @@ const CourseCards = () => {
 
             <h1 className='text-center mt-8 text-4xl'>Premium Courses</h1>
             
-            <div className='flex flex-col items-center sm:flex-row sm:justify-center sm:flex-wrap'>
+            <div ref={premiumCoursesRef} className='flex flex-col items-center sm:flex-row sm:justify-center sm:flex-wrap'>
                 
                 {premiumCourses.map((course)=> (
                     <motion.div 
@@ -79,7 +89,7 @@ const CourseCards = () => {
                             visible: { opacity: 1, rotateY: 0 },
                         }}
                         initial="hidden"
-                        animate={mainControls}
+                        animate={premiumCoursesControls}
                         transition={{ 
                             duration: 1, delay: 0.5 
                         }}
