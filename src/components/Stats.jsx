@@ -4,8 +4,8 @@ import { NavLink } from 'react-router-dom'
 
 const stats = [
     { id: 1, name: 'Team of experts', value: '10+' },
-    { id: 2, name: 'Registered Students', value: '200+' },
-    { id: 3, name: 'Free and Premium Courses', value: '9+' },
+    { id: 2, name: 'Free Courses', value: '6' },
+    { id: 3, name: 'Premium Courses', value: '3' },
   ]
 
 const links = [        

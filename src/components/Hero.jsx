@@ -5,10 +5,8 @@ const links = [
     { name: 'Learn more', to: '/about' },
     { name: 'Enroll now', to: 'https://docs.google.com/forms/d/e/1FAIpQLScOF-wMyki2RrpToBKCNiS--xniFngmWXMrOM9iivyc2mEqgQ/viewform' },
   ]
-  const stats = [
-    { name: 'Free Courses', value: '6' },
-    { name: 'Premium Courses', value: '3' },
-    { name: 'Registered Students', value: '200+' },
+  const stats = [    
+    { name: 'Valuable Courses', value: '9' },    
     { name: 'Study schedule', value: 'Flexible' },
   ]
   
@@ -49,7 +47,7 @@ const links = [
           <div className="md:max-w-xl lg:mx-0 bg-yellow-50 text-gray-900 p-8 opacity-70">
             <h2 className="text-red-700 text-4xl font-bold tracking-tight sm:text-6xl">Dreams Endeavour</h2>
             <p className="mt-6 text-lg leading-8">
-            Dreams Endeavour is the one of a kind venture that you will love to explore. The time and money invested is sure to be of great worth that will add brilliance to your professional dreams.
+            Dreams Endeavour is a one of a kind venture that you will love to explore. The time and money invested is sure to be of great worth that will add brilliance to your professional dreams.
             </p>
           </div>
           <div className="mx-auto mt-10 lg:max-w-4xl lg:mx-0">
