@@ -9,7 +9,7 @@ const links = [
     { name: 'Free Courses', value: '6' },
     { name: 'Premium Courses', value: '3' },   
     { name: 'Study schedule', value: 'Flexible' }, 
-    { name: 'Collaboration', value: 'AIFEST' },    
+    { name: 'Collaboration', value: 'AIFEST' }   
   ]
   
   export default function Hero() {
