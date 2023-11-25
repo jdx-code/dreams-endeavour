@@ -14,45 +14,39 @@ const Footer = () => {
                         <div className='col-span-3 sm:col-span-2'>
                             <ul>                            
                                 <li className='pb-2'>
-                                    <a href="/#services">Home</a>
+                                    <a href="/">Home</a>
                                 </li>
                                 <li className='pb-2'>
-                                    <a href="/#services">About Us</a>
+                                    <a href="/about">About Us</a>
                                 </li>
                                 <li className='pb-2'>
-                                    <a href="/#services">Our Team</a>
+                                    <a href="/team">Our Team</a>
                                 </li>
                                 <li className='pb-2'>
-                                    <a href="/internship">Courses</a>
+                                    <a href="/courses">Courses</a>
                                 </li>
                             </ul>
                         </div>  
                         <div className='col-span-3 sm:col-span-2'>
                             <ul>     
                                 <li className='pb-2'>
-                                    <a href="/#services">Basic Courses</a>
+                                    <a href="/courses/#payments">Payments</a>
                                 </li>                       
                                 <li className='pb-2'>
-                                    <a href="/#services">Premium Courses</a>
-                                </li>
-                                {/* <li className='pb-2'>
-                                    <a href="/#services">IT Outsourcing</a>
-                                </li>
-                                <li className='pb-2'>
-                                    <a href="/#services">Agile Consulting</a>
-                                </li>                                 */}
+                                    <a href="/#aifest">AIFEST</a>
+                                </li>                               
                             </ul>
                         </div> 
                         <div className='col-span-6 sm:col-span-2'>
                             <ul>
                                 <li className='pb-2'>
-                                    <a href="/about">Spoken English</a>
+                                    <a href="/courses">Spoken English</a>
                                 </li> 
                                 <li className='pb-2'>
-                                    <a href="/about">Personality Development</a>
+                                    <a href="/courses">Personality Development</a>
                                 </li>                            
                                 <li className='pb-2'>
-                                    <a href="/about">Interview Skills</a>
+                                    <a href="/courses">Interview Skills</a>
                                 </li>
                             </ul>
                         </div>             
