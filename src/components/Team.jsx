@@ -41,36 +41,41 @@ const Team = () => {
   ]   
 
   return (
-    <>  
-      <div ref={ref}>
-        <h1 className='text-center mt-8 text-4xl'>Our team</h1>
-        
-        <div className='flex flex-col items-center sm:flex-row sm:justify-center sm:flex-wrap'>
-            
-            {teammates.map((teammate)=> (
-                <motion.div 
-                  variants={{
-                    hidden: { opacity: 0, rotateY: 180 },
-                    visible: { opacity: 1, rotateY: 0 },
-                  }}
-                  initial="hidden"
-                  animate={mainControls}
-                  transition={{ 
-                    duration: 1, delay: 0.5 
-                  }}   
-                  key={teammate.id} className='w-72 mt-8 mb-8 p-2 border-2 border-blue-200 shadow-2xl rounded-lg sm:mx-4'
-                >
-                    <img className="rounded-md" src={teammate.img} />
-                    <div className='text-center p-2'>
-                        <p>{teammate.name}</p>
-                        <p>{teammate.address}</p>
-                        <p>{teammate.role}</p>
-                    </div>                
-                </motion.div>
-            ))}              
-                      
-        </div>
-      </div>        
+    <> 
+      <section id="team">
+
+        <div ref={ref}>
+          <h1 className='text-center mt-8 text-4xl'>Our team</h1>
+          
+          <div className='flex flex-col items-center sm:flex-row sm:justify-center sm:flex-wrap'>
+              
+              {teammates.map((teammate)=> (
+                  <motion.div 
+                    variants={{
+                      hidden: { opacity: 0, rotateY: 180 },
+                      visible: { opacity: 1, rotateY: 0 },
+                    }}
+                    initial="hidden"
+                    animate={mainControls}
+                    transition={{ 
+                      duration: 1, delay: 0.5 
+                    }}   
+                    key={teammate.id} className='w-72 mt-8 mb-8 p-2 border-2 border-blue-200 shadow-2xl rounded-lg sm:mx-4'
+                  >
+                      <img className="rounded-md" src={teammate.img} />
+                      <div className='text-center p-2'>
+                          <p>{teammate.name}</p>
+                          <p>{teammate.address}</p>
+                          <p>{teammate.role}</p>
+                      </div>                
+                  </motion.div>
+              ))}              
+                        
+          </div>
+        </div>  
+
+      </section> 
+       
     </>
   )
 }
