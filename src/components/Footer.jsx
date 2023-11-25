@@ -20,7 +20,7 @@ const Footer = () => {
                                     <a href="/about">About Us</a>
                                 </li>
                                 <li className='pb-2'>
-                                    <a href="/team">Our Team</a>
+                                    <a href="/about#team">Our Team</a>
                                 </li>
                                 <li className='pb-2'>
                                     <a href="/courses">Courses</a>
