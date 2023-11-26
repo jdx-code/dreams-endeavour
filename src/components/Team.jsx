@@ -42,7 +42,7 @@ const Team = () => {
 
   return (
     <> 
-      <section id="team">
+      <section>
 
         <div ref={ref}>
           <h1 className='text-center mt-8 text-4xl'>Our team</h1>
