@@ -50,7 +50,7 @@ const CourseCards = () => {
 
   return (
     <>  
-        <div>
+        <div id="courses">
             <h1 className='text-center mt-8 text-4xl'>Free Courses</h1>
             
             <div ref={freeCoursesRef} className='flex flex-col items-center sm:flex-row sm:justify-center sm:flex-wrap'>

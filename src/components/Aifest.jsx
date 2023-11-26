@@ -26,8 +26,7 @@ const Aifest = () => {
     }, [isInView])
 
   return (
-    <>
-    <section id="aifest">
+    <>    
         <div ref={ref} className='flex flex-col'>
             <motion.h1 
                 variants = {{
@@ -74,8 +73,7 @@ const Aifest = () => {
                     />
                 </div>
             </div>
-        </div>
-    </section>            
+        </div>         
     </>
   )
 }

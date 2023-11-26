@@ -1,4 +1,3 @@
-import { useState, useEffect } from 'react'
 import { Route, Routes, useLocation } from "react-router-dom";
 import initFontAwesome from "./components/FontAwesomeIcons/initFontAwesome";
 import Navbar from './components/Navbar'
@@ -12,14 +11,15 @@ initFontAwesome();
 function App() {  
 
   return (
-    <>
+    <>    
       <Navbar/>
+      
       <Routes>
         <Route path="/" element={<Home />} />     
         <Route path="/about" element={<About />} /> 
         <Route path="/courses" element={<Courses />} />
         <Route path="/contact" element={<Contact />} />
-      </Routes> 
+      </Routes>     
     </>
   )
 

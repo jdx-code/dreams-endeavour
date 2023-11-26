@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link, NavLink } from 'react-router-dom';
 
 const Footer = () => {
     const currentDate = new Date();
@@ -8,44 +9,73 @@ const Footer = () => {
         <div className='footerClass bg-[#f7d852] text-gray-800'>
             <div className='w-full max-w-[95%] m-auto p-4 md:pt-8 grid md:grid-cols-6'>
                 <div className='w-full max-w-[95%] text-xs font-bold mb-8 col-span-4 md:border-r-2 md:border-blue-200'>
-                    <p className='font-bold text-lg pb-3 underline'>Our Courses</p>
+                    <p className='font-bold text-lg pb-3 underline'>Quick Links</p>
                     <div className='grid grid-cols-6 '>                
                         <div className='col-span-3 sm:col-span-2'>
                             <ul>                            
-                                <li className='pb-2'>
-                                    <a href="/">Home</a>
+                                <li className='pb-2'>                                    
+                                    <Link
+                                        to="/#hero"                                                                                                                                
+                                    >
+                                        Home
+                                    </Link>                                                    
                                 </li>
                                 <li className='pb-2'>
-                                    <a href="/about">About Us</a>
-                                </li>
+                                    <Link
+                                        to="/about"                                                                                         
+                                    >
+                                        About Us
+                                    </Link>                                                                                        
+                                </li>                                
                                 <li className='pb-2'>
-                                    <a href="/about#team">Our Team</a>
-                                </li>
-                                <li className='pb-2'>
-                                    <a href="/courses">Courses</a>
+                                    <NavLink
+                                        to="/#objectives"                                                                                            
+                                    >
+                                        Objectives
+                                    </NavLink>                                                                                                                            
                                 </li>
                             </ul>
                         </div>  
                         <div className='col-span-3 sm:col-span-2'>
                             <ul>     
                                 <li className='pb-2'>
-                                    <a href="/courses/#payments">Payments</a>
+                                    <NavLink
+                                        to="/courses#payments"                                                    
+                                    >
+                                        Payments
+                                    </NavLink>                                    
                                 </li>                       
                                 <li className='pb-2'>
-                                    <a href="/#aifest">AIFEST</a>
+                                    <NavLink
+                                        to="/#aifest"                                                    
+                                    >
+                                        AIFEST
+                                    </NavLink>                                    
                                 </li>                               
                             </ul>
                         </div> 
                         <div className='col-span-6 sm:col-span-2'>
                             <ul>
                                 <li className='pb-2'>
-                                    <a href="/courses">Spoken English</a>
+                                    <Link
+                                        to="/#courses"                                                    
+                                    >
+                                        Spoken English
+                                    </Link>                                                                                                                                                                
                                 </li> 
                                 <li className='pb-2'>
-                                    <a href="/courses">Personality Development</a>
+                                    <Link
+                                        to="/#courses"                                                    
+                                    >
+                                        Personality Development
+                                    </Link>                                                                                                                                                                
                                 </li>                            
                                 <li className='pb-2'>
-                                    <a href="/courses">Interview Skills</a>
+                                    <Link
+                                        to="/#courses"                                                    
+                                    >
+                                        Interview Skills
+                                    </Link>                                                                                                                                                                                                    
                                 </li>
                             </ul>
                         </div>             

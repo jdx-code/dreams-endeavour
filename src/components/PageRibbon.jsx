@@ -15,7 +15,7 @@ const PageRibbon = ({ pageTitle }) => {
 
         }
     }, [isInView])
-
+    
   return (
     <>
     <div ref={ref}>
