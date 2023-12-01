@@ -6,7 +6,7 @@ const links = [
     { name: 'Enroll now', to: 'https://docs.google.com/forms/d/e/1FAIpQLScOF-wMyki2RrpToBKCNiS--xniFngmWXMrOM9iivyc2mEqgQ/viewform' },
   ]
   const stats = [    
-    { name: 'Free Courses', value: '6' },
+    { name: 'Free Courses', value: '4' },
     { name: 'Premium Courses', value: '3' },   
     { name: 'Study schedule', value: 'Flexible' }, 
     { name: 'Collaboration', value: 'AIFEST' }   
