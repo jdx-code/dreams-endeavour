@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
     const currentDate = new Date();
@@ -26,14 +26,7 @@ const Footer = () => {
                                     >
                                         About Us
                                     </Link>                                                                                        
-                                </li>                                
-                                {/* <li className='pb-2'>
-                                    <NavLink
-                                        to="/#objectives"                                                                                            
-                                    >
-                                        Objectives
-                                    </NavLink>                                                                                                                            
-                                </li> */}
+                                </li> 
                             </ul>
                         </div>  
                         <div className='col-span-3 sm:col-span-2'>
