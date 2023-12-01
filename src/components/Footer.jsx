@@ -15,7 +15,7 @@ const Footer = () => {
                             <ul>                            
                                 <li className='pb-2'>                                    
                                     <Link
-                                        to="/#hero"                                                                                                                                
+                                        to="/"                                                                                                                                
                                     >
                                         Home
                                     </Link>                                                    
@@ -39,44 +39,30 @@ const Footer = () => {
                         <div className='col-span-3 sm:col-span-2'>
                             <ul>     
                                 <li className='pb-2'>
-                                    <NavLink
-                                        to="/courses#payments"                                                    
-                                    >
-                                        Payments
-                                    </NavLink>                                    
-                                </li>                       
-                                <li className='pb-2'>
-                                    <NavLink
-                                        to="/#aifest"                                                    
-                                    >
-                                        AIFEST
-                                    </NavLink>                                    
-                                </li>                               
-                            </ul>
-                        </div> 
-                        <div className='col-span-6 sm:col-span-2'>
-                            <ul>
-                                <li className='pb-2'>
                                     <Link
                                         to="/courses"                                                    
                                     >
                                         Courses
                                     </Link>                                                                                                                                                                
                                 </li> 
-                                {/* <li className='pb-2'>
-                                    <Link
-                                        to="/#courses"                                                    
-                                    >
-                                        Personality Development
-                                    </Link>                                                                                                                                                                
-                                </li>                            
                                 <li className='pb-2'>
                                     <Link
-                                        to="/#courses"                                                    
+                                        to="/#aifest"                                                    
                                     >
-                                        Interview Skills
-                                    </Link>                                                                                                                                                                                                    
-                                </li> */}
+                                        AIFEST
+                                    </Link>                                    
+                                </li>                               
+                            </ul>
+                        </div> 
+                        <div className='col-span-6 sm:col-span-2'>
+                            <ul>                                 
+                                <li className='pb-2'>
+                                    <Link
+                                        to="/contact"                                                    
+                                    >
+                                        Contact
+                                    </Link>                                    
+                                </li>                                
                             </ul>
                         </div>             
                     </div>

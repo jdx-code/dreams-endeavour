@@ -25,8 +25,7 @@ const Courses = () => {
     <>
         <PageRibbon pageTitle="Courses"/>
         <CourseCards ref={coursesRef}/>
-        <Payments />
-        <Footer />
+        <Payments />        
     </>
   )
 }
