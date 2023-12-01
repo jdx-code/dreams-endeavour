@@ -29,8 +29,7 @@ const Home = () => {
             <Hero ref={heroRef} />
             <Objectives ref={objectivesRef} />
             <Aifest ref={aifestRef} />
-            <Stats />
-            <Footer />            
+            <Stats />                      
         </div>
     )
 }

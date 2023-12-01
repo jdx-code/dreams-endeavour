@@ -88,7 +88,7 @@ const points = [
                 <div className="flex min-w-0 gap-x-4">
                   <img className="h-auto w-6 flex-none rounded-full bg-gray-50" src={POINT} alt="" />
                   <div className="min-w-0 flex-auto">
-                    <p className="text-sm font-semibold leading-6 text-gray-900">{point.title}</p>  
+                    <p className=" text-[0.6rem] sm:text-sm font-semibold leading-6 text-gray-900">{point.title}</p>  
                   </div>
                 </div>
                 <div className="shrink-0 sm:flex sm:flex-col sm:items-end">              
