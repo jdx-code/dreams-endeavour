@@ -27,53 +27,55 @@ const Aifest = () => {
 
   return (
     <>    
-        <div ref={ref} className='flex flex-col'>
-            <motion.h1 
-                variants = {{
-                    hidden: { opacity: 0, y: 75},
-                    visible: { opacity: 1, y: 0},
-                }}
-                initial="hidden"
-                animate={mainControls}
-                transition={{ 
-                    duration:0.5, delay: 0.25 
-                }}
-                className='mt-12 text-3xl md:text-4xl mb-8 text-center'
-            >
-                Collaboration with AIFEST
-            </motion.h1>
-            <div className='w-[100%] flex flex-col-reverse lg:flex-row'>            
-                <motion.div 
+        <section id="aifest">
+            <div ref={ref} className='flex flex-col'>
+                <motion.h1 
                     variants = {{
-                        hidden: { opacity: 0, x: 95},
-                        visible: { opacity: 1, x: 0},
+                        hidden: { opacity: 0, y: 75},
+                        visible: { opacity: 1, y: 0},
                     }}
                     initial="hidden"
                     animate={mainControls}
                     transition={{ 
                         duration:0.5, delay: 0.25 
                     }}
-                    className='items-center p-4 m-4 gap-5 lg:w-[62%]'
+                    className='mt-12 text-3xl md:text-4xl mb-8 text-center'
                 >
-                    <h1 className='text-3xl md:text-4xl mb-5'>{content[0].title}</h1>
-                    <p>{content[0].desc}</p>
-                </motion.div>
-                <div className='mx-auto lg:w-[38%] flex justify-center items-center'>
-                    <motion.img
+                    Collaboration with AIFEST
+                </motion.h1>
+                <div className='w-[100%] flex flex-col-reverse lg:flex-row'>            
+                    <motion.div 
                         variants = {{
-                            hidden: { opacity: 0, x: -95},
+                            hidden: { opacity: 0, x: 95},
                             visible: { opacity: 1, x: 0},
                         }}
                         initial="hidden"
                         animate={mainControls}
                         transition={{ 
                             duration:0.5, delay: 0.25 
-                        }} 
-                        src={content[0].img}
-                    />
+                        }}
+                        className='items-center p-4 m-4 gap-5 lg:w-[62%]'
+                    >
+                        <h1 className='text-3xl md:text-4xl mb-5'>{content[0].title}</h1>
+                        <p>{content[0].desc}</p>
+                    </motion.div>
+                    <div className='mx-auto lg:w-[38%] flex justify-center items-center'>
+                        <motion.img
+                            variants = {{
+                                hidden: { opacity: 0, x: -95},
+                                visible: { opacity: 1, x: 0},
+                            }}
+                            initial="hidden"
+                            animate={mainControls}
+                            transition={{ 
+                                duration:0.5, delay: 0.25 
+                            }} 
+                            src={content[0].img}
+                        />
+                    </div>
                 </div>
             </div>
-        </div>         
+        </section>                 
     </>
   )
 }

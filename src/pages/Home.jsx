@@ -6,9 +6,7 @@ import Objectives from '../components/Objectives';
 import Stats from '../components/Stats';
 
 const Home = () => {
-
-    const heroRef = useRef(null);
-    const objectivesRef = useRef(null);
+    
     const aifestRef = useRef(null);
 
     useEffect(() => {
@@ -26,8 +24,8 @@ const Home = () => {
 
     return(
         <div id='main'>
-            <Hero ref={heroRef} />
-            <Objectives ref={objectivesRef} />
+            <Hero />
+            <Objectives />
             <Aifest ref={aifestRef} />
             <Stats />                      
         </div>
