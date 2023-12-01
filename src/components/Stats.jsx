@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom'
 
 const stats = [
     { id: 1, name: 'Team of experts', value: '10+' },
-    { id: 2, name: 'Free Courses', value: '6' },
+    { id: 2, name: 'Free Courses', value: '4' },
     { id: 3, name: 'Premium Courses', value: '3' },
   ]
 
