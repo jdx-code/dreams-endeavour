@@ -19,12 +19,12 @@ const About = () => {
       mainControls.start("visible")
 
       }
-  }, [isInView])  
+  }, [isInView])    
 
   return (
     <>
       <PageRibbon pageTitle="About" />
-      <div        
+      <div           
         className="relative isolate overflow-hidden px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0">
 
       <div className="absolute inset-0 -z-10 overflow-hidden">

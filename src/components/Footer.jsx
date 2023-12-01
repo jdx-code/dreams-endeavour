@@ -27,13 +27,13 @@ const Footer = () => {
                                         About Us
                                     </Link>                                                                                        
                                 </li>                                
-                                <li className='pb-2'>
+                                {/* <li className='pb-2'>
                                     <NavLink
                                         to="/#objectives"                                                                                            
                                     >
                                         Objectives
                                     </NavLink>                                                                                                                            
-                                </li>
+                                </li> */}
                             </ul>
                         </div>  
                         <div className='col-span-3 sm:col-span-2'>
@@ -58,12 +58,12 @@ const Footer = () => {
                             <ul>
                                 <li className='pb-2'>
                                     <Link
-                                        to="/#courses"                                                    
+                                        to="/courses"                                                    
                                     >
-                                        Spoken English
+                                        Courses
                                     </Link>                                                                                                                                                                
                                 </li> 
-                                <li className='pb-2'>
+                                {/* <li className='pb-2'>
                                     <Link
                                         to="/#courses"                                                    
                                     >
@@ -76,7 +76,7 @@ const Footer = () => {
                                     >
                                         Interview Skills
                                     </Link>                                                                                                                                                                                                    
-                                </li>
+                                </li> */}
                             </ul>
                         </div>             
                     </div>
