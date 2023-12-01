@@ -35,11 +35,9 @@ const CourseCards = () => {
 
   const freeCourses = [
     { id: 1, name: 'Spoken English', desc: 'Introduction, Grammar, Reading, Conversational Skills, Vocabulary Pronunciation.', price: 'FREE', img: CourseOne },
-    { id: 2, name: 'Personality Development', desc: 'Introduction, Developing personality, Communication skills, Body language', price: 'FREE', img: CourseTwo },
-    { id: 3, name: 'Job seeker’s know-how', desc: 'How to apply for different jobs, opening account in LinkedIn and other online platforms', price: 'FREE', img: CourseThree },
-    { id: 4, name: 'Employability Skills', desc: 'Communication skills, Interview skills, Presentation skills, Dress code ethics', price: 'FREE', img: CourseFour },
-    { id: 5, name: 'Spoken English', desc: 'Introduction, Grammar, Reading, Conversational Skills, Vocabulary Pronunciation.', price: 'FREE', img: CourseOne },
-    { id: 6, name: 'Personality Development', desc: 'Introduction, Developing personality, Communication skills, Body language', price: 'FREE', img: CourseTwo },
+    { id: 2, name: 'Personality Development', desc: 'Introduction, Developing personality, Communication skills, Body language', price: 'FREE', img: CourseTwo },    
+    { id: 3, name: 'Employability Skills', desc: 'Communication skills, Interview skills, Presentation skills, Dress code ethics', price: 'FREE', img: CourseFour },    
+    { id: 4, name: 'Personality Development', desc: 'Introduction, Developing personality, Communication skills, Body language', price: 'FREE', img: CourseTwo },
   ]
   
   const premiumCourses = [        
@@ -69,8 +67,8 @@ const CourseCards = () => {
                         key={course.id} className='w-72 mt-8 mb-8 p-2 border-2 border-blue-200 shadow-2xl rounded-lg sm:mx-4'>
                         <img className="rounded-md" src={course.img} />
                         <div className='text-center p-2'>
-                            <p>{course.name}</p>
-                            <p>{course.desc}</p>
+                            <p className='font-semibold'>{course.name}</p>
+                            <p className='text-sm'>{course.desc}</p>
                         </div>                
                     </motion.div>
                 ))}            
@@ -95,11 +93,11 @@ const CourseCards = () => {
                         }}
                         key={course.id} className='w-72 mt-8 mb-8 p-2 border-2 border-blue-200 shadow-2xl rounded-lg sm:mx-4'
                     >
+                        <span className='absolute ml-[12.4rem] bg-[#f7d852] border-2 border-red-400 px-2 rounded-md'>{course.price}</span>
                         <img className="rounded-md" src={course.img} />
                         <div className='text-center p-2'>
-                            <p>{course.name}</p>
-                            <p>{course.desc}</p>
-                            <span className='bg-yellow-500 border-2 border-red-400 px-2'>{course.price}</span>
+                            <p className='font-semibold'>{course.name}</p>
+                            <p className='pb-2 text-sm'>{course.desc}</p>                            
                         </div>                
                     </motion.div>
                 ))}            
