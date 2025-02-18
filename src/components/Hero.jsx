@@ -49,10 +49,11 @@ const links = [
             />
           </div>
           <div className="mx-auto lg:max-w-7xl px-6 lg:px-8">
-            <div className="md:max-w-xl lg:mx-0 bg-yellow-50 text-gray-900 p-8 opacity-70">
-              <h2 className="text-red-700 text-4xl font-bold tracking-tight sm:text-6xl">Dreams Endeavour</h2>
-              <p className="mt-6 text-lg leading-8">
-              Dreams Endeavour is a one of a kind venture that you will love to explore. The time and money invested is sure to be of great worth that will add brilliance to your professional dreams.
+            <div className="md:max-w-2xl lg:mx-0 bg-yellow-50 text-gray-900 p-8 opacity-70 rounded-md">
+              <h2 className="text-red-700 text-4xl font-bold tracking-tight sm:text-6xl">What is Dreams Endeavour?</h2>
+              <p className="mt-6 text-lg leading-8">              
+              Dreams Endeavour is an online platform for any jobseeker to enhance their personality and prepare the best for their professional life.
+              With 12  extremely talented and experienced trainers, Dreams Endeavours is a one of a kind venture that you will love to explore. It is in collaboration with All India Forum for English Students Scholars and Trainers(AIFEST) that has successfully promoted the cause of English Research and Studies in India since 1994. Dreams Endeavour is a one of a kind venture that you will love to explore. With various courses that will cater to each and every requirement of yours regarding soft skills and interview preparation, it is sure to be of great worth that will add brilliance to your professional dreams.
               </p>
             </div>
             <div className="mx-auto mt-10 lg:max-w-4xl lg:mx-0">
