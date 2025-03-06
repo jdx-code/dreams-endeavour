@@ -6,6 +6,7 @@ import CourseThree from '../assets/c3.jpg'
 import CourseFour from '../assets/c4.jpg'
 import CourseFive from '../assets/c5.jpg'
 import CourseSix from '../assets/c6.jpg'
+import CourseSeven from '../assets/c7.jpg'
 
 
 const CourseCards = () => {
@@ -35,9 +36,9 @@ const CourseCards = () => {
 
   const freeCourses = [
     { id: 1, name: 'Spoken English', desc: 'Introduction, Grammar, Reading, Conversational Skills, Vocabulary Pronunciation.', price: 'FREE', img: CourseOne },
-    { id: 2, name: 'Personality Development', desc: 'Introduction, Developing personality, Communication skills, Body language', price: 'FREE', img: CourseTwo },    
+    { id: 2, name: 'Personality Development', desc: 'Introduction, Developing personality, Body language', price: 'FREE', img: CourseTwo },    
     { id: 3, name: 'Employability Skills', desc: 'Communication skills, Interview skills, Presentation skills, Dress code ethics', price: 'FREE', img: CourseFour },    
-    { id: 4, name: 'Personality Development', desc: 'Introduction, Developing personality, Communication skills, Body language', price: 'FREE', img: CourseTwo },
+    { id: 4, name: 'Communication Skills', desc: 'Types of communication, Activity to enhance communication, Work place communication', price: 'FREE', img: CourseSeven },
   ]
   
   const premiumCourses = [        
