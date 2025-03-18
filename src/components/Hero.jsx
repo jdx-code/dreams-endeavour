@@ -1,7 +1,5 @@
 import { NavLink } from 'react-router-dom'
 import MainBG from '../assets/main-bg.jpg'
-import '../styles.css';
-
 
 const links = [    
     { name: 'Learn more', to: '/about' },
