@@ -1,5 +1,7 @@
 import { NavLink } from 'react-router-dom'
 import MainBG from '../assets/main-bg.jpg'
+import '../styles.css';
+
 
 const links = [    
     { name: 'Learn more', to: '/about' },
@@ -50,10 +52,10 @@ const links = [
           </div>
           
           <div className='flex flex-col'>
-
-            <div className="text-xl md:text-3xl lg:text-3xl font-bold text-red-700 text-center md:text-left p-8 md:self-start md:pl-12">
-              <p>Dreams Endeavour</p>
-              <p>Your dream, our endeavour.</p>
+            
+            <div className="text-red-700 text-center md:text-left p-8 md:self-start md:pl-12">
+              <p className="text-2xl md:text-3xl lg:text-4xl font-bold">Dreams Endeavour</p>
+              <p className="text-sm md:text-lg lg:text-xl font-light">Your dream, our endeavour.</p>
             </div>
             
             <div className="mx-auto lg:max-w-7xl px-6 lg:px-8">            
