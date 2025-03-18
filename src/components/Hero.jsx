@@ -17,7 +17,7 @@ const links = [
     return (
 
       <section id="hero">
-        <div className="mainbg relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32">
+        <div className="mainbg relative isolate overflow-hidden bg-gray-900 py-12 sm:py-20">
           <img
             // src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&crop=focalpoint&fp-y=.8&w=2830&h=1500&q=80&blend=111827&sat=-100&exp=15&blend-mode=multiply"
             src={MainBG}
@@ -48,38 +48,53 @@ const links = [
               }}
             />
           </div>
-          <div className="mx-auto lg:max-w-7xl px-6 lg:px-8">
-            <div className="md:max-w-2xl lg:mx-0 bg-yellow-50 text-gray-900 p-8 opacity-70 rounded-md">
-              <h2 className="text-red-700 text-4xl font-bold tracking-tight sm:text-6xl">What is Dreams Endeavour?</h2>
-              <p className="mt-6 text-lg leading-8">              
-              Dreams Endeavour is an online platform for any jobseeker to enhance their personality and prepare the best for their professional life.
-              With 12  extremely talented and experienced trainers, Dreams Endeavours is a one of a kind venture that you will love to explore. It is in collaboration with All India Forum for English Students Scholars and Trainers(AIFEST) that has successfully promoted the cause of English Research and Studies in India since 1994. Dreams Endeavour is a one of a kind venture that you will love to explore. With various courses that will cater to each and every requirement of yours regarding soft skills and interview preparation, it is sure to be of great worth that will add brilliance to your professional dreams.
-              </p>
-            </div>
-            <div className="mx-auto mt-10 lg:max-w-4xl lg:mx-0">
-              <div className="grid grid-cols-2 gap-x-8 gap-y-6 text-base font-semibold leading-7 sm:grid-cols-2 md:flex lg:gap-x-10">
-                
-                {links.map((link) => (                
-                  <button className='bg-[#ff8a00] text-gray-100 p-2 rounded-md hover:text-gray-700'>
-                    <NavLink
-                      to={link.to}                                      
-                    >
-                      {link.name}
-                    </NavLink>
-                  </button>                
-                ))}
+          
+          <div className='flex flex-col'>
 
-              </div>
-              <dl className="mt-16 grid grid-cols-1 gap-8 sm:mt-20 sm:grid-cols-2 lg:grid-cols-4">
-                {stats.map((stat) => (
-                  <div key={stat.name} className="flex flex-col-reverse rounded-md opacity-70 p-4 bg-yellow-50 text-gray-700">
-                    <dt className="text-base leading-7">{stat.name}</dt>
-                    <dd className="text-2xl font-bold leading-9 tracking-tight">{stat.value}</dd>
-                  </div>
-                ))}
-              </dl>
+            <div className="text-xl md:text-3xl lg:text-3xl font-bold text-red-700 text-center md:text-left p-8 md:self-start md:pl-12">
+              <p>Dreams Endeavour</p>
+              <p>Your dream, our endeavour.</p>
             </div>
+            
+            <div className="mx-auto lg:max-w-7xl px-6 lg:px-8">            
+              <div className="md:max-w-2xl lg:mx-0 bg-yellow-50 text-gray-900 p-8 opacity-70 rounded-md">
+                <h2 className="text-red-700 text-4xl font-bold tracking-tight sm:text-6xl">What is Dreams Endeavour?</h2>
+                <p className="mt-6 text-lg leading-8">              
+                Dreams Endeavour is an online platform for any jobseeker to enhance their personality and prepare the best for their professional life.
+                With 12  extremely talented and experienced trainers, Dreams Endeavours is a one of a kind venture that you will love to explore. It is in collaboration with All India Forum for English Students Scholars and Trainers(AIFEST) that has successfully promoted the cause of English Research and Studies in India since 1994. Dreams Endeavour is a one of a kind venture that you will love to explore. With various courses that will cater to each and every requirement of yours regarding soft skills and interview preparation, it is sure to be of great worth that will add brilliance to your professional dreams.
+                </p>
+              </div>
+              <div className="mx-auto mt-10 lg:max-w-4xl lg:mx-0">
+                <div className="grid grid-cols-2 gap-x-8 gap-y-6 text-base font-semibold leading-7 sm:grid-cols-2 md:flex lg:gap-x-10">
+                  
+                  {links.map((link) => (                
+                    <button className='bg-[#ff8a00] text-gray-100 p-2 rounded-md hover:text-gray-700'>
+                      <NavLink
+                        to={link.to}                                      
+                      >
+                        {link.name}
+                      </NavLink>
+                    </button>                
+                  ))}
+
+                </div>
+                <dl className="mt-16 grid grid-cols-1 gap-8 sm:mt-20 sm:grid-cols-2 lg:grid-cols-4">
+                  {stats.map((stat) => (
+                    <div key={stat.name} className="flex flex-col-reverse rounded-md opacity-70 p-4 bg-yellow-50 text-gray-700">
+                      <dt className="text-base leading-7">{stat.name}</dt>
+                      <dd className="text-2xl font-bold leading-9 tracking-tight">{stat.value}</dd>
+                    </div>
+                  ))}
+                </dl>
+              </div>
+            </div>
+
+
           </div>
+
+          
+          
+          
         </div>
       </section>
       
